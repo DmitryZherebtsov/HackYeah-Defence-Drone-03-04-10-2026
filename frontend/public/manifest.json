@@ -1,0 +1,26 @@
+{
+  "name": "System Koordynacji Kryzysowej",
+  "short_name": "SKK",
+  "description": "System koordynacji kryzysowej, alertów i matrycy zasobów dla samorządów, służb ratunkowych i NGO.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0284c7",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["government", "productivity", "utilities"]
+}

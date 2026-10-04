@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: drone-app
+    runtime: node
+    plan: free
+    region: frankfurt
+    rootDir: .
+    buildCommand: cd frontend && npm install --include=dev && npx vite build && cd ../backend && npm install --include=dev && npm run build
+    startCommand: cd backend && npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: DB_STORAGE
+        value: ./database.sqlite
